@@ -20,7 +20,7 @@ public class WoodenEditSignScreen extends Screen {
     private final WoodenSignTileEntity tileSign;
     private int updateCounter;
     private int editLine;
-    private TextInputUtil field_214267_d;
+    private TextInputUtil textInputUtil;
 
     public WoodenEditSignScreen(WoodenSignTileEntity p_i1097_1_) {
         super(new TranslationTextComponent("sign.edit"));
@@ -33,7 +33,7 @@ public class WoodenEditSignScreen extends Screen {
             this.close();
         }));
         this.tileSign.setEditable(false);
-        this.field_214267_d = new TextInputUtil(this.minecraft, this.tileSign.getText(this.editLine)::getString, (p_214265_1_) -> {
+        this.textInputUtil = new TextInputUtil(this.minecraft, this.tileSign.getText(this.editLine)::getString, (p_214265_1_) -> {
             this.tileSign.setText(this.editLine, new StringTextComponent(p_214265_1_));
         }, 90);
     }
@@ -62,7 +62,7 @@ public class WoodenEditSignScreen extends Screen {
     }
 
     public boolean charTyped(char p_charTyped_1_, int p_charTyped_2_) {
-        this.field_214267_d.func_216894_a(p_charTyped_1_);
+        this.textInputUtil.func_216894_a(p_charTyped_1_);
         return true;
     }
 
@@ -73,13 +73,13 @@ public class WoodenEditSignScreen extends Screen {
     public boolean keyPressed(int p_keyPressed_1_, int p_keyPressed_2_, int p_keyPressed_3_) {
         if (p_keyPressed_1_ == 265) {
             this.editLine = this.editLine - 1 & 3;
-            this.field_214267_d.func_216899_b();
+            this.textInputUtil.func_216899_b();
             return true;
         } else if (p_keyPressed_1_ != 264 && p_keyPressed_1_ != 257 && p_keyPressed_1_ != 335) {
-            return this.field_214267_d.func_216897_a(p_keyPressed_1_) || super.keyPressed(p_keyPressed_1_, p_keyPressed_2_, p_keyPressed_3_);
+            return this.textInputUtil.func_216897_a(p_keyPressed_1_) || super.keyPressed(p_keyPressed_1_, p_keyPressed_2_, p_keyPressed_3_);
         } else {
             this.editLine = this.editLine + 1 & 3;
-            this.field_214267_d.func_216899_b();
+            this.textInputUtil.func_216899_b();
             return true;
         }
     }
@@ -90,21 +90,19 @@ public class WoodenEditSignScreen extends Screen {
         GlStateManager.color4f(1.0F, 1.0F, 1.0F, 1.0F);
         GlStateManager.pushMatrix();
         GlStateManager.translatef((float)(this.width / 2), 0.0F, 50.0F);
-        float lvt_4_1_ = 93.75F;
         GlStateManager.scalef(-93.75F, -93.75F, -93.75F);
         GlStateManager.rotatef(180.0F, 0.0F, 1.0F, 0.0F);
         BlockState lvt_5_1_ = this.tileSign.getBlockState();
-        float lvt_6_2_;
+        float rotation;
         if (lvt_5_1_.getBlock() instanceof WoodenStandingSignBlock || lvt_5_1_.getBlock() instanceof WoodenHangingSignBlock) {
-            lvt_6_2_ = (float)(lvt_5_1_.get(BlockStateProperties.ROTATION_0_15) * 360) / 16.0F;
+            rotation = (float)(lvt_5_1_.get(BlockStateProperties.ROTATION_0_15) * 360) / 16.0F;
         } else {
-            lvt_6_2_ = (lvt_5_1_.get(WoodenWallSignBlock.FACING)).getHorizontalAngle();
+            rotation = (lvt_5_1_.get(WoodenWallSignBlock.FACING)).getHorizontalAngle();
         }
 
-        GlStateManager.rotatef(lvt_6_2_, 0.0F, 1.0F, 0.0F);
+        GlStateManager.rotatef(rotation, 0.0F, 1.0F, 0.0F);
         GlStateManager.translatef(0.0F, -1.0625F, 0.0F);
-        this.tileSign.func_214062_a(this.editLine, this.field_214267_d.func_216896_c(), this.field_214267_d.func_216898_d(), this.updateCounter / 6 % 2 == 0);
-        // TileEntityRendererDispatcher.instance.render(this.tileSign, -0.5D, -0.75D, -0.5D, 0.0F);
+        this.tileSign.func_214062_a(this.editLine, this.textInputUtil.func_216896_c(), this.textInputUtil.func_216898_d(), this.updateCounter / 6 % 2 == 0);
         this.tileSign.func_214063_g();
         GlStateManager.popMatrix();
         super.render(p_render_1_, p_render_2_, p_render_3_);
