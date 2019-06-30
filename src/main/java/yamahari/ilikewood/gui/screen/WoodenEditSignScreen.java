@@ -92,12 +92,12 @@ public class WoodenEditSignScreen extends Screen {
         GlStateManager.translatef((float)(this.width / 2), 0.0F, 50.0F);
         GlStateManager.scalef(-93.75F, -93.75F, -93.75F);
         GlStateManager.rotatef(180.0F, 0.0F, 1.0F, 0.0F);
-        BlockState lvt_5_1_ = this.tileSign.getBlockState();
+        BlockState blockState = this.tileSign.getBlockState();
         float rotation;
-        if (lvt_5_1_.getBlock() instanceof WoodenStandingSignBlock || lvt_5_1_.getBlock() instanceof WoodenHangingSignBlock) {
-            rotation = (float)(lvt_5_1_.get(BlockStateProperties.ROTATION_0_15) * 360) / 16.0F;
+        if (blockState.getBlock() instanceof WoodenStandingSignBlock || blockState.getBlock() instanceof WoodenHangingSignBlock) {
+            rotation = (float)(blockState.get(BlockStateProperties.ROTATION_0_15) * 360) / 16.0F;
         } else {
-            rotation = (lvt_5_1_.get(WoodenWallSignBlock.FACING)).getHorizontalAngle();
+            rotation = (blockState.get(WoodenWallSignBlock.FACING)).getHorizontalAngle();
         }
 
         GlStateManager.rotatef(rotation, 0.0F, 1.0F, 0.0F);
