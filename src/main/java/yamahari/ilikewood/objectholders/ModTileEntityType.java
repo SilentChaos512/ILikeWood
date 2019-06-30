@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import yamahari.ilikewood.tileentities.WoodenBarrelTileEntity;
 import yamahari.ilikewood.tileentities.WoodenChestTileEntity;
 import yamahari.ilikewood.tileentities.WoodenLecternTileEntity;
+import yamahari.ilikewood.tileentities.WoodenSignTileEntity;
 import yamahari.ilikewood.util.Constants;
 
 @ObjectHolder(Constants.MOD_ID)
@@ -29,4 +30,6 @@ public class ModTileEntityType {
     public static final TileEntityType<WoodenLecternTileEntity> birch_lectern = null;
     public static final TileEntityType<WoodenLecternTileEntity> jungle_lectern = null;
     public static final TileEntityType<WoodenLecternTileEntity> acacia_lectern = null;
+
+    public static final TileEntityType<WoodenSignTileEntity> wooden_sign = null;
 }

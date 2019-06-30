@@ -1,0 +1,24 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "ilikewood:block/sign/wall/spruce",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=east": {
+      "model": "ilikewood:block/sign/wall/spruce",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=north": {
+      "model": "ilikewood:block/sign/wall/spruce",
+      "y": 0,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "ilikewood:block/sign/wall/spruce",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

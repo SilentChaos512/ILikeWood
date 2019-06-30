@@ -193,5 +193,25 @@ public class ModBlocks {
     public static final Block birch_log_pile = null;
     public static final Block jungle_log_pile = null;
     public static final Block acacia_log_pile = null;
-    
+
+    public static final Block oak_sign = null;
+    public static final Block dark_oak_sign = null;
+    public static final Block spruce_sign = null;
+    public static final Block birch_sign = null;
+    public static final Block jungle_sign = null;
+    public static final Block acacia_sign = null;
+
+    public static final Block oak_wall_sign = null;
+    public static final Block dark_oak_wall_sign = null;
+    public static final Block spruce_wall_sign = null;
+    public static final Block birch_wall_sign = null;
+    public static final Block jungle_wall_sign = null;
+    public static final Block acacia_wall_sign = null;
+
+    public static final Block oak_hanging_sign = null;
+    public static final Block dark_oak_hanging_sign = null;
+    public static final Block spruce_hanging_sign = null;
+    public static final Block birch_hanging_sign = null;
+    public static final Block jungle_hanging_sign = null;
+    public static final Block acacia_hanging_sign = null;
 }

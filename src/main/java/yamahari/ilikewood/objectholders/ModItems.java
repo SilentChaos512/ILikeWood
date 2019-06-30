@@ -561,4 +561,11 @@ public class ModItems {
     public static final Item birch_log_pile = null;
     public static final Item jungle_log_pile = null;
     public static final Item acacia_log_pile = null;
+
+    public static final Item oak_sign = null;
+    public static final Item dark_oak_sign = null;
+    public static final Item spruce_sign = null;
+    public static final Item birch_sign = null;
+    public static final Item jungle_sign = null;
+    public static final Item acacia_sign = null;
 }

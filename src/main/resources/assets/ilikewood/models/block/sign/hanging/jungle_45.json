@@ -1,0 +1,6 @@
+{
+  "parent": "ilikewood:block/sign/hanging/template_45",
+  "textures": {
+    "planks": "block/jungle_planks"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "variants": {
+    "rotation=2": {
+      "model": "ilikewood:block/sign/standing/dark_oak_45",
+      "y": 0,
+      "uvlock": false
+    },
+    "rotation=1": {
+      "model": "ilikewood:block/sign/standing/dark_oak_22_5",
+      "y": 0,
+      "uvlock": false
+    },
+    "rotation=0": {
+      "model": "ilikewood:block/sign/standing/dark_oak",
+      "y": 0,
+      "uvlock": false
+    },
+    "rotation=6": {
+      "model": "ilikewood:block/sign/standing/dark_oak_45",
+      "y": 90,
+      "uvlock": false
+    },
+    "rotation=5": {
+      "model": "ilikewood:block/sign/standing/dark_oak_22_5",
+      "y": 90,
+      "uvlock": false
+    },
+    "rotation=4": {
+      "model": "ilikewood:block/sign/standing/dark_oak",
+      "y": 90,
+      "uvlock": false
+    },
+    "rotation=3": {
+      "model": "ilikewood:block/sign/standing/dark_oak_67_5",
+      "y": 0,
+      "uvlock": false
+    },
+    "rotation=9": {
+      "model": "ilikewood:block/sign/standing/dark_oak_22_5",
+      "y": 180,
+      "uvlock": false
+    },
+    "rotation=8": {
+      "model": "ilikewood:block/sign/standing/dark_oak",
+      "y": 180,
+      "uvlock": false
+    },
+    "rotation=7": {
+      "model": "ilikewood:block/sign/standing/dark_oak_67_5",
+      "y": 90,
+      "uvlock": false
+    },
+    "rotation=10": {
+      "model": "ilikewood:block/sign/standing/dark_oak_45",
+      "y": 180,
+      "uvlock": false
+    },
+    "rotation=11": {
+      "model": "ilikewood:block/sign/standing/dark_oak_67_5",
+      "y": 180,
+      "uvlock": false
+    },
+    "rotation=14": {
+      "model": "ilikewood:block/sign/standing/dark_oak_45",
+      "y": 270,
+      "uvlock": false
+    },
+    "rotation=15": {
+      "model": "ilikewood:block/sign/standing/dark_oak_67_5",
+      "y": 270,
+      "uvlock": false
+    },
+    "rotation=12": {
+      "model": "ilikewood:block/sign/standing/dark_oak",
+      "y": 270,
+      "uvlock": false
+    },
+    "rotation=13": {
+      "model": "ilikewood:block/sign/standing/dark_oak_22_5",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

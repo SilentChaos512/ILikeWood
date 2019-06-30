@@ -1,0 +1,7 @@
+{
+  "parent": "ilikewood:block/sign/standing/template_67_5",
+  "textures": {
+    "log": "block/spruce_log",
+    "planks": "block/spruce_planks"
+  }
+}

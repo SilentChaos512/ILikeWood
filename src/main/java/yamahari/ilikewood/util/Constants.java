@@ -10,6 +10,8 @@ import java.util.Map;
 
 public class Constants {
     public static final String MOD_ID = "ilikewood";
+    public static final String PROTOCOL_VERSION = "1.0";
+
     public static final ImmutableSet<Block> BARRELS =
             ImmutableSet.of(
                     ModBlocks.oak_barrel,
@@ -228,6 +230,16 @@ public class Constants {
                     ModBlocks.birch_composter,
                     ModBlocks.jungle_composter,
                     ModBlocks.acacia_composter
+            );
+
+    public static final ImmutableSet<Block> SIGNS =
+            ImmutableSet.of(
+                    ModBlocks.oak_sign,
+                    ModBlocks.dark_oak_sign,
+                    ModBlocks.spruce_sign,
+                    ModBlocks.birch_sign,
+                    ModBlocks.jungle_sign,
+                    ModBlocks.acacia_sign
             );
 
     public static final ImmutableSet<Block> LOG_PILES =
